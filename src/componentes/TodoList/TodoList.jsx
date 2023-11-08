@@ -29,7 +29,8 @@ const TodoList = () => {
         localStorage.setItem("tareas", JSON.stringify(tareas));
     }, [tareas]);
     return (
-        <div>
+        <div className="todo">
+            <div>
             <h1 className="titulo">Lista de tareas</h1><br />
             <form onSubmit={manejarFormulario}>
                 <input type="text" placeholder="Agregar tarea" onChange={(e) => setInputValue(e.target.value)} value={inputValue} />
@@ -44,6 +45,7 @@ const TodoList = () => {
                     />
                 ))}
             </ul>
+        </div>
         </div>
     );
 };

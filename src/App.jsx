@@ -4,10 +4,12 @@ import TodoItem from './componentes/TodoItem/TodoItem.jsx'
 
 const App = () => {
   return (
-    <div>
-      <TodoList />
+    <div className="todo">
+        <div>
+          <TodoList />
+        </div>
     </div>
   );
 }
 
-export default App;
+export default App; 
